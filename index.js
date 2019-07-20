@@ -5,11 +5,11 @@ require('dotenv').config();
 const server = gateway({
   routes: [{
     prefix: '/login',
-    target: 'http://localhost:8080/userLoginSignUp/'
+    target: 'http://172.17.0.1:8080/userLoginSignUp/'
   },
   {
 	prefix : '/user',
-	target : 'http://localhost:8080/userApi',
+	target : 'http://172.17.0.1:8080/userApi',
 	middlewares: [
       require('express-jwt')({
         secret: 'ASSH7912EEKNQWQWOD0IH11RKOK544SWDI22U49@#y!('
@@ -18,7 +18,7 @@ const server = gateway({
   },
   {
 	prefix : '/project',
-	target : 'http://localhost:8080/projectApi',
+	target : 'http://172.17.0.1:8080/projectApi',
 	middlewares: [
       require('express-jwt')({
         secret: 'ASSH7912EEKNQWQWOD0IH11RKOK544SWDI22U49@#y!('
@@ -27,7 +27,7 @@ const server = gateway({
   },
   {
 	prefix : '/phase',
-	target : 'http://localhost:8080/phaseApi',
+	target : 'http://172.17.0.1:8080/phaseApi',
 	middlewares: [
       require('express-jwt')({
         secret: 'ASSH7912EEKNQWQWOD0IH11RKOK544SWDI22U49@#y!('
@@ -36,7 +36,7 @@ const server = gateway({
   },
   {
 	prefix : '/company',
-	target : 'http://localhost:8081/company',
+	target : 'http://172.17.0.1:8081/company',
 	middlewares: [
       require('express-jwt')({
         secret: 'ASSH7912EEKNQWQWOD0IH11RKOK544SWDI22U49@#y!('
@@ -45,7 +45,7 @@ const server = gateway({
   },
   {
 	prefix : '/investment',
-	target : 'http://localhost:8081/investment',
+	target : 'http://172.17.0.1:8081/investment',
 	middlewares: [
       require('express-jwt')({
         secret: 'ASSH7912EEKNQWQWOD0IH11RKOK544SWDI22U49@#y!('
@@ -54,7 +54,7 @@ const server = gateway({
   },
   {
 	prefix : '/notification',
-	target : 'http://localhost:8082/notification',
+	target : 'http://172.17.0.1:8082/notification',
 	middlewares: [
       require('express-jwt')({
         secret: 'ASSH7912EEKNQWQWOD0IH11RKOK544SWDI22U49@#y!('
@@ -63,7 +63,7 @@ const server = gateway({
   },
   {
 	prefix : '/job',
-	target : 'http://localhost:8082/job',
+	target : 'http://172.17.0.1:8082/job',
 	middlewares: [
       require('express-jwt')({
         secret: 'ASSH7912EEKNQWQWOD0IH11RKOK544SWDI22U49@#y!('
@@ -72,7 +72,7 @@ const server = gateway({
   },
   {
 	prefix : '/clientVendorApi',
-	target : 'http://localhost:8083/clientVendorApi',
+	target : 'http://172.17.0.1:8083/clientVendorApi',
 	middlewares: [
       require('express-jwt')({
         secret: 'ASSH7912EEKNQWQWOD0IH11RKOK544SWDI22U49@#y!('
@@ -81,7 +81,7 @@ const server = gateway({
   },
   {
 	prefix : '/expenseApi',
-	target : 'http://localhost:8083/expenseApi',
+	target : 'http://172.17.0.1:8083/expenseApi',
 	middlewares: [
       require('express-jwt')({
         secret: 'ASSH7912EEKNQWQWOD0IH11RKOK544SWDI22U49@#y!('
@@ -90,7 +90,7 @@ const server = gateway({
   },
   {
 	prefix : '/saleApi',
-	target : 'http://localhost:8083/saleApi',
+	target : 'http://172.17.0.1:8083/saleApi',
 	middlewares: [
       require('express-jwt')({
         secret: 'ASSH7912EEKNQWQWOD0IH11RKOK544SWDI22U49@#y!('
@@ -99,7 +99,7 @@ const server = gateway({
   },
   {
 	prefix : '/invoiceApi',
-	target : 'http://localhost:8083/invoiceApi',
+	target : 'http://172.17.0.1:8083/invoiceApi',
 	middlewares: [
       require('express-jwt')({
         secret: 'ASSH7912EEKNQWQWOD0IH11RKOK544SWDI22U49@#y!('
